@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Básico</title>
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para centrar el contenido */
+        .centrado {
+            text-align: center;
+        }
+        /* Estilo para justificar el texto */
+        .justificar {
+            text-align: justify;
+        }
+        /* Estilo de fondo para el cuerpo de la página */
+        body {
+            background-color: #bde0fe; /*e8dff5*/
+        }
+        /* Estilo para limitar el ancho del cuerpo de la página */
+        body {
+            max-width: 1350px; /* Puedes ajustar este valor según tus preferencias */
+            margin: 0 auto; /* Centra el contenido horizontalmente */
+            padding: 0 20px; /* Añade un poco de espacio en los lados */
+        }
+        form {
+            font-size: 25px;
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="centrado">
+        <h1 style="font-size: 40px">Encuestaaaaaaaaa</h1>
+        <img src="assets/img/vacaciones.jpeg" alt="Ado con una guitarra" width="1270" height="720"/>
+        </div>        
+    </header>
+    <nav>
+        <!-- Barra de navegación -->
+        <br>
+        <br>
+        <div class="justificar">
+            <h2 style="font-size: 30px">
+                Preparateeeeeeeee para ser encuestadooooooooooooooo
+            </h2>
+        </div>
+    </nav>
+    <main>
+        <form action="/procesar_formulario" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br>
+            
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion"><br>
+            
+            <label for="ciudad">Ciudad:</label><br>
+            <input type="text" id="ciudad" name="ciudad"><br>
+            
+            <label for="codigo_postal">Código Postal:</label><br>
+            <input type="text" id="codigo_postal" name="codigo_postal"><br>
+            
+            <label for="pais">País:</label><br>
+            <input type="text" id="pais" name="pais"><br>
+            
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+            
+            <label for="genero">Género:</label><br>
+            <select id="genero" name="genero">
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select><br>
+            
+            <label for="intereses">Intereses:</label><br>
+            <input type="text" id="intereses" name="intereses"><br>
+            
+            <input type="submit" value="Enviar">
+          </form>
+        <!-- Contenido principal -->
+        <section>
+            <!-- Sección principal -->
+            <br>
+            <h3 style="font-size: 30px">Espero que te haya gustado la encuestaaaaaa</h3>
+            <div class="centrado">
+                <p style="font-size: 25px">
+                Vivaaaaaaaaaaaaaaaaaaaaaaaaaaa Adooooooooooooooooooooooooooooooooooooooooooooo
+                <br>
+                ADO WORLD DOMINATIOOOOOOOOOOOOOOOOOON
+                </p>
+                <img src="assets/img/adoworld.jpg" alt="Ado va a dominar el mundo" width="1280" height="1280"/>
+                <br><br>
+                <a style="font-size: 25px" href="principal.html">Regresar a la página principal</a>
+                </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Pie de página -->
+        <p style="font-size: 25px">&copy; 2024 Antonio Anchondo</p>
+    </footer>
+
+    <!-- Scripts de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
